@@ -1,0 +1,85 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #3673aa;
+}
+
+.container {
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0 #0c2135;
+  background-color: #214465;
+  padding: 20px 20px 30px;
+  min-width: 360px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #bce0ff;
+}
+
+form input {
+  margin: 2px 0px 30px;
+  font-size: large;
+  font-weight: 400;
+  padding: 3px 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: white;
+}
+
+form input:focus {
+  border-bottom-color: white;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.form-control label {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  font-size: large;
+  cursor: text;
+}
+
+/* .form-control label {
+  transform: translateY(0px);
+  transition: transform 0.3s ease;
+} */
+
+/* form input:focus + label {
+  transform: translateY(-30px);
+  transition: transform 0.3s ease;
+} */
+
+.form-control label span {
+  display: inline-block;
+  color: white;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+form input:focus + label span {
+  color: lightblue !important;
+  transform: translateY(-30px);
+}
